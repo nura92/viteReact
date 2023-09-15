@@ -1,0 +1,21 @@
+fetch('https://api/someurl')
+			.then(res => res.json)
+			.then(data => {
+				// some code here
+			})
+			.catch(err => {
+				// some code here
+			});
+
+		try {
+			const res = await fetch('https://api/someurl');
+			const data = await res.json();
+			// some code here
+		} catch (error) {
+			// some code here
+		}
+
+
+
+
+    
